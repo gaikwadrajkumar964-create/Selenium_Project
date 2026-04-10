@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 09 18:47:56 IST 2026</td>
+<td>Started on:</td><td>Fri Apr 10 12:13:45 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5371 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6592 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,8 +76,29 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runner.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Scenario one", "Test Cogmento application"</td>
-<td></td>
-<td>5</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user click on login button&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given(&quot;user click on login button&quot;)
+public void user_click_on_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.user click on login button(file:///C:/Users/gaikw/git/Selenium_Project/src/test/resources/features/Cogmento.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1275464847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1275464847'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user click on login button&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given(&quot;user click on login button&quot;)
+public void user_click_on_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.user click on login button(file:///C:/Users/gaikw/git/Selenium_Project/src/test/resources/features/Cogmento.feature:8)
+</pre></div></td>
+<td>6</td>
 <td>runner.RunnerTest@368f2016</td></tr>
 </table><p>
 </body>
